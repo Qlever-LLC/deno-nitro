@@ -1,0 +1,46 @@
+{
+	"name": "@qlever-llc/deno-nitro",
+	"version": "0.1.0",
+	"exports": "./mod.ts",
+	"tasks": {
+		"generate:bindings": {
+			"description": "Generate TypeScript bindings from Rust code",
+			"command": "deno_bindgen --release --lazy-init"
+		},
+		"hack:bindings": {
+			"command": "sed -i 's/^\\/\\/ Auto-generated/\\/\\/ @ts-nocheck HACK: Auto-generated/' bindings/bindings.ts",
+			"dependencies": ["generate:bindings"]
+		},
+		"bindings": {
+			"description": "Generate and fixup TypeScript bindings",
+			"dependencies": ["generate:bindings", "hack:bindings"]
+		},
+		"dev": "deno test -A --watch",
+		"publish": {
+			"description": "Build and publish to JSR",
+			"command": "deno publish",
+			"dependencies": ["bindings"]
+		}
+	},
+	"license": "Apache-2.0",
+	"imports": {
+		"@std/assert": "jsr:@std/assert@1",
+		"cbor-x": "npm:cbor-x@1.6.0"
+	},
+	"publish": {
+		"include": [
+			"mod.ts",
+			"bindings/",
+			"target/release/libdeno_nitro.so",
+			"target/release/libdeno_nitro.dll",
+			"target/release/libdeno_nitro.dylib",
+			"deno.json",
+			"README.md",
+			"LICENSE",
+			"NOTICE"
+		]
+	},
+	"lint": {
+		"exclude": ["bindings/**", "node_modules/**", "dist/**"]
+	}
+}

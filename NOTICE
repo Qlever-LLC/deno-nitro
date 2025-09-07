@@ -1,0 +1,43 @@
+deno-nitro
+Copyright (c) 2025 Qlever LLC
+
+This product includes software developed at
+Qlever LLC (http://qlever.io)
+
+This project includes the following third-party components:
+
+deno_bindgen
+Copyright (c) 2021 Divy Srivastava
+Licensed under the MIT License
+
+nsm-nitro-enclave-utils
+Copyright (c) 2022 nsm-nitro-enclave-utils contributors
+Licensed under the Apache License, Version 2.0
+
+cbor-x
+Copyright (c) 2021 Kris Zyp
+Licensed under the MIT License
+
+tokio
+Copyright (c) 2024 Tokio Contributors
+Licensed under the MIT License
+
+anyhow
+Copyright (c) 2019 David Tolnay
+Licensed under the MIT License
+
+serde
+Copyright (c) 2014 Erick Tryzelaar and David Tolnay
+Licensed under the MIT License
+
+clap
+Copyright (c) 2015-2022 Kevin B. Knapp and clap contributors
+Licensed under the MIT License
+
+libc
+Copyright (c) 2014-2020 The Rust Project Developers
+Licensed under the MIT License
+
+lazy_static
+Copyright (c) 2014 Marvin Löbel
+Licensed under the MIT License

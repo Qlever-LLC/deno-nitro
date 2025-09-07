@@ -1,0 +1,85 @@
+# Rust
+/target/
+/bindings/
+Cargo.lock
+*.pdb
+
+# Deno
+.deno/
+
+# Node.js / Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+node_modules/
+.pnp.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Log files
+*.log
+logs/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Build artifacts
+dist/
+build/
+*.dll
+*.so
+*.dylib
+*.exe
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# AWS/Nitro specific (if any)
+*.pem
+*.key
+*.crt
+*.der
+!test_data/*.der
+
+# macOS
+.AppleDouble
+.LSOverride
+
+# Windows
+*.lnk
+
+# Linux
+*~

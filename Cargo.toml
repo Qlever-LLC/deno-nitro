@@ -1,0 +1,25 @@
+[package]
+name = "deno_nitro"
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+
+[lib]
+name = "deno_nitro"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[features]
+default = ["nitro"]
+nitro = []
+dev = ["dep:clap", "nsm-nitro-enclave-utils/pki"]
+
+[dependencies]
+anyhow = "1.0.99"
+clap = { version = "4.5.46", features = ["derive"], optional = true }
+deno_bindgen = "0.8.1"
+lazy_static = "1.5.0"
+libc = "0.2.175"
+nsm-nitro-enclave-utils = "0.1.2"
+serde = "1.0.219"
+tokio = { version = "1.47.1", features = ["full"] }
