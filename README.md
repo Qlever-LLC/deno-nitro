@@ -1,6 +1,14 @@
 # @Qlever-LLC/deno-nitro
 
+[![JSR](https://jsr.io/badges/@qlever-llc/deno-nitro)](https://jsr.io/@qlever-llc/deno-nitro)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/qlever-llc/deno-nitro)](https://github.com/qlever-llc/deno-nitro/releases)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Deno Version](https://img.shields.io/badge/deno-1.40%2B-brightgreen)](https://deno.land/)
+[![Rust Version](https://img.shields.io/badge/rust-1.70%2B-orange)](https://www.rust-lang.org/)
+[![Platform](https://img.shields.io/badge/platform-linux-lightgrey)](https://github.com/qlever-llc/deno-nitro)
+[![AWS Nitro](https://img.shields.io/badge/AWS-Nitro%20Enclaves-ff9900)](https://aws.amazon.com/ec2/nitro/nitro-enclaves/)
+
+<!-- [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/qlever-llc/deno-nitro/ci.yml?branch=main)](https://github.com/qlever-llc/deno-nitro/actions) -->
 
 A Deno library for AWS Nitro Enclaves attestation, providing a TypeScript
 interface to AWS Nitro security features through Rust bindings.
